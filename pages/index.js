@@ -23,7 +23,7 @@ const Home = () => {
           <p>Currently logged in as:</p>
           <pre>{JSON.stringify(user, null, 2)}</pre>
           
-          <div>Claculator</div>
+          <div className="text-red-500">Claculator</div>
 
 <div className="mx-auto overflow-hidden mt-10 shadow-lg mb-2 bg-transparent shadow-lg border rounded-lg">
     <div className="">
