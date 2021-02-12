@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
+      <nav className="bg-transparent text-black" >
         <div>Logo</div>
         <ul>
           <li>
@@ -55,10 +55,6 @@ const Header = () => {
         a {
           color: #fff;
           text-decoration: none;
-        }
-        header {
-          color: #fff;
-          background-color: #333;
         }
       `}</style>
     </header>

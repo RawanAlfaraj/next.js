@@ -1,8 +1,16 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
-  variants: {},
+  variants: { 
+    extend: {
+    backgroundColor: ['active'],
+    backgroundOpacity: ['active'],
+    opacity: ['active'],
+  }
+},
   plugins: [],
+ 
 }

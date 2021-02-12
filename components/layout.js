@@ -31,7 +31,11 @@ const Layout = (props) => (
         box-sizing: border-box;
       }
       body {
-        margin: 0;
+        background-image: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
+        height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
         color: #333;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
           'Helvetica Neue', Arial, Noto Sans, sans-serif, 'Apple Color Emoji',
