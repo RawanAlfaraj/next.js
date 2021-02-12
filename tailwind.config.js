@@ -7,7 +7,7 @@ module.exports = {
     extend: {
     backgroundColor: ['active'],
     backgroundOpacity: ['active'],
-    opacity: ['active']
+    opacity: ['active'],
   }
 },
   plugins: [],
