@@ -13,7 +13,6 @@
     "magic-sdk": "1.0.1",
     "next": "latest",
     "postcss": "^7.0.35",
-    "postcss-preset-env": "^6.7.0",
     "react": "latest",
     "react-dom": "latest",
     "swr": "0.1.16",
@@ -22,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
+    "postcss-preset-env": "^6.7.0",
     "webpack": "^5.21.2"
   }
 }
