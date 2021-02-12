@@ -8,9 +8,13 @@ const Home = () => {
 
   return (
     <Layout>
+
 {!user && (
   <>
+      <div className="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-sm">Welcome to Magic Calculator App</div>
+
         <li>Please login to use the calculator</li>
+      
       </>
 
 )}
