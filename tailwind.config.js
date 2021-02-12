@@ -3,13 +3,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: { 
-    extend: {
-    backgroundColor: ['active'],
-    backgroundOpacity: ['active'],
-    opacity: ['active'],
-  }
-},
+  variants: {},
   plugins: [],
  
 }
