@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useUser } from "../lib/hooks";
 import Image from "next/image";
+import React, { Component } from 'react';
 
 const Header = () => {
   const user = useUser();

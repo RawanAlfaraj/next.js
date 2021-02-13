@@ -1,6 +1,7 @@
 import { useUser } from "../lib/hooks";
 import Layout from "../components/layout";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   const user = useUser({ redirectTo: "/login" });
@@ -31,7 +32,7 @@ const About = () => {
         <div className="text-gray-500 text-xl font-light mt-8 md:mt-6 mb-10">
           This project is done by Rawan Alfaraj, with the requirments that were
           given for the job application assignement. You can find a full
-          report/documentaion of the project HERE. If you have any questions you
+          report/documentaion of the project <a className="font-normal hover:text-gray-100"><Link href="/Report.pdf"> HERE </Link></a> . If you have any questions you
           can email me at alfarajrawan@gmail.com or call me at 0548800661.
         </div>
 
