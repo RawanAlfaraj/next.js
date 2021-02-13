@@ -46,15 +46,15 @@ const Login = () => {
 
   return (
     <Layout>
-      <div className="login">
+      <div className="login bg-white bg-opacity-25 mt-12">
         <Form errorMessage={errorMsg} onSubmit={handleSubmit} />
       </div>
       <style jsx>{`
         .login {
           max-width: 21rem;
-          margin: 0 auto;
+          margin-left: auto;
+          margin-right: auto;
           padding: 1rem;
-          border: 1px solid #ccc;
           border-radius: 4px;
         }
       `}</style>

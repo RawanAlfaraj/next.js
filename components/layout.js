@@ -3,14 +3,41 @@ import Header from './header'
 
 const Layout = (props) => (
   <>
+  <div className="flex flex-col min-h-screen">
     <Head>
       <title>Magic</title>
       <link rel="icon" href="/favicon.ico" />
+
+      <link
+            rel="preload"
+            href="/fonts/Poppins-Thin.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Poppins-ExtraLight.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Poppins-Light.ttf"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Poppins-Medium.ttf"
+            as="font"
+            crossOrigin=""
+          />
+
     </Head>
 
     <Header />
 
-    <main>
+    <main className="flex-1">
       <div className="container">{props.children}</div>
     </main>
 
@@ -37,12 +64,12 @@ const Layout = (props) => (
     background-repeat: no-repeat;
     background-attachment: fixed;
         color: #333;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
           'Helvetica Neue', Arial, Noto Sans, sans-serif, 'Apple Color Emoji',
           'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
       }
       .container {
-        max-width: 42rem;
+        max-width: 50rem;
         margin: 0 auto;
         padding: 2rem 1.25rem;
       }
@@ -54,7 +81,7 @@ const Layout = (props) => (
         justify-content: center;
         align-items: center;
       }
-    `}</style>
+    `}</style></div>
   </>
 )
 
