@@ -1,12 +1,14 @@
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
-    extend: {}
+    extend: {},
   },
-  variants: {extend: {
-    backgroundColor: ['active'],
-    backgroundOpacity: ['active'],
-    opacity: ['active'],
-  }},
-  plugins: []
+  variants: {
+    extend: {
+      backgroundColor: ["active"],
+      backgroundOpacity: ["active"],
+      opacity: ["active"],
+    },
+  },
+  plugins: [],
 };

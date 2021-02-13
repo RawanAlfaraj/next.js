@@ -1,23 +1,22 @@
-import Link from 'next/link'
-import { useUser } from '../lib/hooks'
-import Image from 'next/image'
+import Link from "next/link";
+import { useUser } from "../lib/hooks";
+import Image from "next/image";
 
 const Header = () => {
-  const user = useUser()
+  const user = useUser();
 
   return (
     <header>
-      <nav className="bg-transparent text-black font-normal" >
-        
+      <nav className="bg-transparent text-black font-normal">
         <ul className="mt-2">
-        <li className="text-center md:text-left md:ml-0 mx-auto md:mr-auto min-w-full md:min-w-min mb-4 md:mb-0"> 
-        <Image
-        src="/MC-Logo.png"
-        alt="Picture of the author"
-        width={200}
-        height={85}
-      />
-           </li>
+          <li className="text-center md:text-left md:ml-0 mx-auto md:mr-auto min-w-full md:min-w-min mb-4 md:mb-0">
+            <Image
+              src="/MC-Logo.png"
+              alt="Picture of the author"
+              width={200}
+              height={85}
+            />
+          </li>
           <li className="ml-auto md:ml-0 mr-2 px-4 rounded-xl hover:bg-white hover:bg-opacity-25 active:bg-opacity-50">
             <Link href="/">
               <a>Home</a>
@@ -32,7 +31,7 @@ const Header = () => {
               </li>
               <li className="mr-auto md:mr-0 px-4 rounded-xl hover:bg-white hover:bg-opacity-25 active:bg-opacity-50">
                 <a href="/api/logout">Logout</a>
-              </li >
+              </li>
             </>
           ) : (
             <li className="mr-auto md:mr-0 px-4 rounded-xl hover:bg-white hover:bg-opacity-25 active:bg-opacity-50">
@@ -55,10 +54,10 @@ const Header = () => {
           list-style: none;
           margin-left: 0;
           padding-left: 0;
-          align-items:center;
+          align-items: center;
         }
         li {
-          height: fit-content
+          height: fit-content;
         }
         a {
           color: #fff;
@@ -66,7 +65,7 @@ const Header = () => {
         }
       `}</style>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
