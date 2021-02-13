@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useUser } from '../lib/hooks'
 import Layout from '../components/layout'
+import { motion } from 'framer-motion';
 
 
 
@@ -13,6 +14,19 @@ const Home = () => {
 {!user && (
   <>
 
+<motion.div initial="hidden" animate="visible" variants={{
+  hidden: {
+    y:30,
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: .4
+    }
+  },
+}}>  
 <div className="flex flex-col items-center">
   <div className="text-white text-5xl font-thin mt-8 md:mt-12 mb-10">Welcome to Magic Calcualtor</div>
 <Link href="/login">
@@ -21,6 +35,9 @@ const Home = () => {
 <div className="font-thin text-purple-100"> to use the calculator </div>
  
       </div>
+
+ </motion.div>
+
       </>
 
 )}
@@ -28,9 +45,36 @@ const Home = () => {
         <>
           {/* <p>Currently logged in as:</p>
           <pre>{JSON.stringify(user, null, 2)}</pre> */}
-          
-          <div className="text-center max-w-xl mx-auto text-white text-4xl md:text-5xl font-thin mt-8 md:mt-12 mb-10">Magic Calcualtor</div>
 
+
+<motion.div initial="hidden" animate="visible" variants={{
+  hidden: {
+    y:30,
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: .4
+    }
+  },
+}}>       
+          <div className="text-center max-w-xl mx-auto text-white text-4xl md:text-5xl font-thin mt-8 md:mt-12 mb-10">Magic Calcualtor</div>
+          </motion.div>        
+          <motion.div initial="hidden" animate="visible" variants={{
+  hidden: {
+    scale: .8,
+    opacity: 0
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      delay: .3
+    }
+  },
+}}>
 
 <div className="max-w-xl bg-white bg-opacity-10 mx-auto overflow-hidden mt-12 shadow-lg mb-12 bg-transparent shadow-lg  rounded-lg">
     <div className="">
@@ -129,7 +173,7 @@ const Home = () => {
 </div>    
   </div>
 </div>
-
+</motion.div>
         </>
       )}
 
