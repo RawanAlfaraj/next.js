@@ -26,8 +26,8 @@ const Header = () => {
           {user ? (
             <>
               <li className="mr-2 px-4 rounded-xl hover:bg-white hover:bg-opacity-25 active:bg-opacity-50">
-                <Link href="/profile">
-                  <a>Profile</a>
+                <Link href="/about">
+                  <a>About</a>
                 </Link>
               </li>
               <li className="mr-auto md:mr-0 px-4 rounded-xl hover:bg-white hover:bg-opacity-25 active:bg-opacity-50">
@@ -55,6 +55,7 @@ const Header = () => {
           list-style: none;
           margin-left: 0;
           padding-left: 0;
+          align-items:center;
         }
         li {
           height: fit-content
