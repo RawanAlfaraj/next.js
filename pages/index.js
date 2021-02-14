@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useUser } from "../lib/hooks";
 import Layout from "../components/layout";
 import { motion } from "framer-motion";
+import Calculator   from '../components/calculator/Calculator'
 
 const Home = () => {
   const user = useUser();
@@ -52,6 +53,9 @@ const Home = () => {
           <pre>{JSON.stringify(user, null, 2)}</pre> */}
 
           {/* Calculator */}
+
+
+
           <motion.div
             initial="hidden"
             animate="visible"
@@ -72,7 +76,15 @@ const Home = () => {
             <div className="text-center max-w-xl mx-auto text-white text-4xl md:text-5xl font-thin mt-8 md:mt-12 mb-10">
               Magic Calcualtor
             </div>
+
+                       <div className="calc-grid-main">
+            <Calculator/>
+        </div>
+
+
           </motion.div>
+
+{/*           
           <motion.div
             initial="hidden"
             animate="visible"
@@ -227,7 +239,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </>
       )}
 
